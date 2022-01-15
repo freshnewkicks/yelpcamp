@@ -7,8 +7,8 @@ const CampgroundSchema = new Schema({
     price: String,
     description: String,
     location: String
-};
+});
 
-    
-
-
+// export our schema
+// by compiling the Model:
+module.exports = mongoose.model('Campground', CampgroundSchema);
