@@ -23,4 +23,6 @@ router.put('/:id', async(req,res) => {
     res.redirect(`/campgrounds/details/${campgrounds.id}`)
 });
 
+
+
 module.exports = router;

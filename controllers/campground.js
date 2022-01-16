@@ -11,4 +11,14 @@ router.get('/', async(req,res) => {
     });
 });
 
+router.put('/', async(req,res) => {
+    const campgrounds = await Campground.create({
+        title: req.body.name,
+        price: req.body.price,
+        location: req.body.location
+    });
+    campgrounds.save();
+    res.redirect(`/campgrounds/details/${campgrounds.id}`);
+})
+
 module.exports = router;

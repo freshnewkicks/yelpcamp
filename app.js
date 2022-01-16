@@ -42,7 +42,7 @@ app.use('/', homeRouter);
 app.use('/campgrounds', campgroundRouter); // goes to /campgrounds
 app.use('/campgrounds/details', campDetailsRouter); // goes to /campgrounds/details/
 app.use('/campgrounds/details/edit', campDetailsEditRouter); // goes to /campgrounds/details/edit
-app.use('/campgrounds/add', campAddRouter);
+app.use('/campgrounds/add', campAddRouter); // goes to /campgrounds/add
 
 // start server on port 3000
 app.listen(process.env.PORT || 3000, () => {
