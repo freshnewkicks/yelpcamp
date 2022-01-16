@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+</head>
+<body>
+
+    <h1>Details</h1>
+    <a href="/campgrounds/details/edit/<%= campgrounds.id %>">Edit</a>
+
+    <p>Name: <%= campgrounds.title %></p>
+    <% if (campgrounds.price) { %>
+       <p> Price: <%= campgrounds.price %> </p>
+    <% } else { %>
+        <p>Price: Contact <a href="mailto:tylerdukedev@gmail.com">tylerdukedev@gmail.com</a> for further details </p>
+    <% } %>
+    <p>Location: <%= campgrounds.location %></p>
+    <a href="/campgrounds">Return to Home</a>
+
+</body>
+</html>
