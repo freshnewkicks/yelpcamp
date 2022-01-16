@@ -20,14 +20,14 @@ better able to visualize concepts and implement them in a meaningful capacity;
 
 how to use method-override to send DELETE and PUT/PATCH requests, where the client will not allow us to use them otherwise;
 
-the use of "dev" versus "start" in the package.json
+the use of "dev" versus "start" in the package.json;
 
 better understanding of Asynchronous javascript, utilized in the context of database manipulation with MongoDB;
 
 # todo
-++ styling
-++ map api integration
-++ login and registration
-++ authentication
-++ cookies
-++ sessions
+++ styling;
+++ map api integration;
+++ login and registration;
+++ authentication;
+++ cookies;
+++ sessions;
