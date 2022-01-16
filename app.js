@@ -36,14 +36,15 @@ const campgroundRouter = require('./controllers/campground.js'); // campground r
 const campDetailsRouter = require('./controllers/details.js'); // campground details route
 const campDetailsEditRouter = require('./controllers/edit.js');
 const campAddRouter = require('./controllers/add.js');
+const deleteRouter = require('./controllers/delete.js');
 
 // use router middleware for home
 app.use('/', homeRouter);
 app.use('/campgrounds', campgroundRouter); // goes to /campgrounds
+app.use('/campgrounds', deleteRouter); // deletes item from db
 app.use('/campgrounds/details', campDetailsRouter); // goes to /campgrounds/details/
 app.use('/campgrounds/details/edit', campDetailsEditRouter); // goes to /campgrounds/details/edit
 app.use('/campgrounds/add', campAddRouter); // goes to /campgrounds/add
-
 // start server on port 3000
 app.listen(process.env.PORT || 3000, () => {
     console.log('Server listening');
