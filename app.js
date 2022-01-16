@@ -10,7 +10,7 @@ const app = express();
 app.use(methodOverride('_method'));
 
 // connect to mongodb
-mongoose.connect('mongodb+srv://admin:fernis12@cluster0.afktq.mongodb.net/YelpCamp?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://admin:pw@cluster0.afktq.mongodb.net/YelpCamp?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
