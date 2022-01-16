@@ -30,12 +30,12 @@ app.use(methodOverride('_method'));
 // lets us parse incoming req.body as json
 app.use(bodyParser.urlencoded({extended: true}));
 
-const indexRouter = require('./controllers/index.js'); // home router
-const cgRouter = require('./controllers/cg.js'); // campground router
+const homeRouter = require('./controllers/home.js'); // home router
+const campgroundRouter = require('./controllers/campground.js'); // campground router
 
 // use router middleware for home
-app.use('/', indexRouter);
-app.use('/campground', cgRouter);
+app.use('/', homeRouter);
+app.use('/campgrounds', campgroundRouter);
 
 // start server on port 3000
 app.listen(process.env.PORT || 3000, () => {

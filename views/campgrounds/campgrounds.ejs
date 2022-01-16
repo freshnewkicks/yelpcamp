@@ -5,14 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home | Yelp Camp</title>
+    <title><%= title %></title>
 </head>
 <body>
-    <h1>Home</h1>
-    <nav>
-        <ul>
-            <li><a href="/campground">Campground ></a></li>
-        </ul>
-    </nav>
+    <h1>All Campgrounds</h1>
+    <ul>
+        <% for (let campground of campgrounds) { %>
+            <li><%= campground.title %></li>
+        <% } %>
+    </ul>
 </body>
 </html>
